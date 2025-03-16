@@ -9,7 +9,7 @@ import About from './Components/Sections/About.jsx'
 import Admire from './Components/Admire.jsx'
 import Projects from './Components/Projects.jsx'
 import Home from './Components/Home.jsx'
-import WhatsApp from './Components/Whatsapp.jsx'
+import WhatsApp from './Components/WhatsApp.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +21,7 @@ createRoot(document.getElementById('root')).render(
     <About/>
     <Footer/>
     <WhatsApp/>
+    
     
   </StrictMode>,
 )

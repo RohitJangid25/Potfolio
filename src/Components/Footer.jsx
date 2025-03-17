@@ -19,12 +19,6 @@ const Footer = () => {
 
                 {/* Social Media Icons */}
                 <div className="flex justify-center gap-6 text-3xl mt-6">
-                    <a href="#" className="hover:text-gray-400 transition-transform transform hover:scale-110">
-                        <FaInstagram />
-                    </a>
-                    <a href="#" className="hover:text-gray-400 transition-transform transform hover:scale-110">
-                        <FaTwitter />
-                    </a>
                     <a 
                         href="https://www.linkedin.com/in/rohitjangid1345/" 
                         target="_blank" 
@@ -33,7 +27,7 @@ const Footer = () => {
                     >
                         <FaLinkedin />
                     </a>
-                    <a href="#" className="hover:text-gray-400 transition-transform transform hover:scale-110">
+                    <a href="https://github.com/RohitJangid25" className="hover:text-gray-400 transition-transform transform hover:scale-110">
                         <FaGithub />
                     </a>
                     <a 

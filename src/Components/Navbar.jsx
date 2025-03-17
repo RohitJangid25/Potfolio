@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaLinkedin, FaBehance, FaWhatsapp, FaBars, FaTimes, FaDownload } from "react-icons/fa"; // Import icons
 import Logo from "/src/assets/logo.png"; // Correct image path
 
-export const Navbar = () => {
+export const Navbar = () => { 
   const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu
 
   return (
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
         {/* Navigation Links (For larger screens) */}
         <div className="hidden md:flex items-center space-x-6">
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500 transition-colors text-2xl">
+          <a href="https://www.linkedin.com/in/rohitjangid1345/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500 transition-colors text-2xl">
             <FaLinkedin />
           </a>
 
@@ -32,7 +32,7 @@ export const Navbar = () => {
             <FaBehance />
           </a>
 
-          <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500 transition-colors text-2xl">
+          <a href= {`https://wa.me/${9588201345}`} target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-500 transition-colors text-2xl">
             <FaWhatsapp />
           </a>
 
@@ -46,13 +46,13 @@ export const Navbar = () => {
       {/* Mobile Dropdown Menu (For smaller screens) */}
       {menuOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-black bg-opacity-90 backdrop-blur-lg flex flex-col items-center py-4 space-y-4">
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-white text-lg flex items-center gap-2">
+          <a href="https://www.linkedin.com/in/rohitjangid1345/" target="_blank" rel="noopener noreferrer" className="text-white text-lg flex items-center gap-2">
             <FaLinkedin /> LinkedIn
           </a>
           <a href="https://www.behance.net/rohitjangid25" target="_blank" rel="noopener noreferrer" className="text-white text-lg flex items-center gap-2">
             <FaBehance /> Behance
           </a>
-          <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer" className="text-white text-lg flex items-center gap-2">
+          <a href= {`https://wa.me/${9588201345}`} target="_blank" rel="noopener noreferrer" className="text-white text-lg flex items-center gap-2">
             <FaWhatsapp /> WhatsApp
           </a>
           <a href="/Rohituiux.pdf" download="Rohit_Jangid_Resume.pdf" className="text-white text-lg flex items-center gap-2 border border-purple-500 px-4 py-2 rounded-lg hover:bg-purple-500">

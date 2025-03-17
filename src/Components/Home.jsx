@@ -10,22 +10,22 @@ const Home = () => {
       </h1>
 
       <div className="w-[80%] flex flex-col md:flex-row items-center gap-8 relative z-10">
-        {/* First Frame (Bottom) */}
+        {/* First Frame */}
         <div className="w-full md:w-[60%] bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-8 md:p-12 text-white shadow-lg relative z-10">
-          <h2 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          <h2 className="text-5xl md:text-7xl font-extrabold text-start leading-tight text-center">
             Hi, <br />
             My name is <span className="text-purple-500">Rohit</span>
           </h2>
-          <p className="text-lg md:text-2xl mt-4 font-extrabold">UI/UX Designer</p>
+          <p className="text-lg md:text-2xl mt-4 font-extrabold text-start ">UI/UX Designer</p>
         </div>
 
-        {/* Second Frame (Slightly Above First One) */}
-        <div className="w-full md:w-[50%] flex justify-center relative -mt-10 md:-mt-20">
-          <div className="bg-white/10 mt-100 backdrop-blur-lg border border-white/20 rounded-xl p-6 md:p-8 shadow-lg relative z-20">
+        {/* Second Frame - Removed for Mobile */}
+        <div className="hidden md:flex w-full md:w-[60%] justify-center relative -mt-20 md:-mt-10">
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 md:p-8 shadow-lg relative z-20 mt-68">
             <img
               src={images.avatar}
               alt="Designer"
-              className="w-full  max-w-xs md:max-w-md rounded-xl mt-20"
+              className="w-full max-w-xs md:max-w-md rounded-xl  mt-40"
             />
           </div>
         </div>

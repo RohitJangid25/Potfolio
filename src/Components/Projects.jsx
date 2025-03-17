@@ -8,15 +8,17 @@ const Projects = () => {
       <h2 className="text-center text-purple-500 text-4xl font-bold mb-8">
         Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-20 py-10">
+      
+      {/* Project Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-6 sm:px-10 md:px-20 py-10">
         {projects.map((project, index) => (
-          <div key={index} className="border rounded-lg p-4">
+          <div key={index} className="border rounded-lg p-4 bg-white/10 backdrop-blur-lg">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-110 object-cover rounded-lg"
+              className="w-full h-48 sm:h-64 md:h-[27rem] object-cover rounded-lg"
             />
-            <h3 className="text-lg font-semibold mt-2">{project.title}</h3>
+            <h3 className="text-lg font-semibold mt-3">{project.title}</h3>
             <a
               href={project.link}
               target="_blank"
@@ -28,9 +30,9 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      
+
       {/* More Projects Button */}
-      <div className="flex justify-end px-20">
+      <div className="flex justify-center md:justify-end px-6 sm:px-10 md:px-20">
         <a
           href="https://www.behance.net/rohitjangid25"
           target="_blank"
